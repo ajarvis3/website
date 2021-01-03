@@ -1,0 +1,13 @@
+﻿@page
+@model website.Pages.PicturesModel
+
+<table>
+@foreach (var pic in Model.Pictures) {
+    <tr>
+        <td>
+            <img src="@pic.Path" alt="img" />
+        </td>
+    </tr>
+}
+</table>
+
